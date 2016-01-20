@@ -75,7 +75,7 @@ var app;
             MainController.prototype.update = function () {
                 this.gridApi.grid.refresh();
             };
-            MainController.prototype.setSelectedTab = function (tab) {
+            MainController.prototype.change = function (tab) {
                 this.selectedTab = tab;
                 if (this.selectedTab === "DATA1") {
                     this.gridOptions.data = this.getData(1);

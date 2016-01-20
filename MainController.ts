@@ -56,7 +56,7 @@ namespace app.controller {
       this.gridApi.grid.refresh();
     }
 
-    setSelectedTab(tab: string): void {
+    change(tab: string): void {
       this.selectedTab = tab;
       if (this.selectedTab === "DATA1") {
         this.gridOptions.data = this.getData(1);

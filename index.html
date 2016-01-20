@@ -19,7 +19,7 @@
       <input ng-model="mainController.filterValue" ng-change="mainController.update()" placeholder="名前検索"/>
       <br/><br/>
       <uib-tabset>
-        <uib-tab ng-repeat="tab in mainController.tabs" heading="{{tab.title}}" select="mainController.setSelectedTab(tab.title)"></uib-tab>
+        <uib-tab ng-repeat="tab in mainController.tabs" heading="{{tab.title}}" select="mainController.change(tab.title)"></uib-tab>
       </uib-tabset>
       <div id="grid" ui-grid="mainController.gridOptions" class="grid"></div>
     </div>
