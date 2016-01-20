@@ -1,0 +1,10 @@
+{
+  "name": "ui-grid-sample",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular-ui-grid": "~3.1.0",
+    "angular": "~1.4.8",
+    "angular-bootstrap": "~1.1.0",
+    "bootstrap": "~3.3.6"
+  }
+}

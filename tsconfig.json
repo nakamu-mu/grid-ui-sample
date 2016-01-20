@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "experimentalDecorators": false,
+        "sourceMap": false,
+        "declaration": false,
+        "noEmitOnError": true
+    },
+    "filesGlob": [],
+    "files": [
+        "app.ts",
+        "DataService.ts",
+        "MainController.ts",
+        "typings/angularjs/angular.d.ts",
+        "typings/jquery/jquery.d.ts",
+        "typings/tsd.d.ts",
+        "typings/ui-grid/ui-grid.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

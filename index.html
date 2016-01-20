@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ui-grid + tab sample</title>
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" type="text/css">
+    <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css" type="text/css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- <script src="./DataService.js"></script>
+    <script src="./MainController.js"></script> -->
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <div ng-controller="MainController as mainController">
+      <input ng-model="mainController.filterValue" ng-change="mainController.update()" placeholder="名前検索"/>
+      <br/><br/>
+      <uib-tabset>
+        <uib-tab ng-repeat="tab in mainController.tabs" heading="{{tab.title}}" select="mainController.setSelectedTab(tab.title)"></uib-tab>
+      </uib-tabset>
+      <div id="grid" ui-grid="mainController.gridOptions" class="grid"></div>
+    </div>
+  </body>
+</html>
